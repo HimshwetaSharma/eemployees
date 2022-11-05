@@ -139,7 +139,7 @@ def hello_world():
         todo =Todo(title=title, desc=desc ,phone=phone )
         db.session.add(todo)
         db.session.commit()
-    allTodo=Todo.query.all()
+#     allTodo=Todo.query.all()
     
     
     return render_template('index.html',allTodo=allTodo)
